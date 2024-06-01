@@ -4,7 +4,20 @@
 [![Coverage Status](https://codecov.io/gh/qiniu/qmgo/branch/master/graph/badge.svg)](https://codecov.io/gh/qiniu/qmgo)
 [![Go Report Card](https://goreportcard.com/badge/github.com/qiniu/qmgo)](https://goreportcard.com/report/github.com/qiniu/qmgo)
 [![GitHub release](https://img.shields.io/github/v/tag/qiniu/qmgo.svg?label=release)](https://github.com/qiniu/qmgo/releases)
-[![GoDoc](https://pkg.go.dev/badge/github.com/qiniu/qmgo?status.svg)](https://pkg.go.dev/github.com/qiniu/qmgo?tab=doc) 
+[![GoDoc](https://pkg.go.dev/badge/github.com/qiniu/qmgo?status.svg)](https://pkg.go.dev/github.com/qiniu/qmgo?tab=doc)
+
+## About this fork
+
+This fork removes built-in hook, field, and validator middlewares for better performance and reduced binary size.
+
+If necessary, you can add them back yourself.
+
+```go
+middleware.Register(hook.Do)
+middleware.Register(field.Do)
+middleware.Register(validator.Do)
+```
+----------------
 
 English | [简体中文](README_ZH.md)
 
