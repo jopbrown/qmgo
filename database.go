@@ -16,7 +16,7 @@ package qmgo
 import (
 	"context"
 
-	"github.com/qiniu/qmgo/options"
+	"github.com/jopbrown/qmgo/options"
 	"go.mongodb.org/mongo-driver/bson/bsoncodec"
 	"go.mongodb.org/mongo-driver/mongo"
 	officialOpts "go.mongodb.org/mongo-driver/mongo/options"

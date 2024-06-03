@@ -3,7 +3,7 @@ package middleware
 import (
 	"context"
 
-	"github.com/qiniu/qmgo/operator"
+	"github.com/jopbrown/qmgo/operator"
 )
 
 // callback define the callback function type
